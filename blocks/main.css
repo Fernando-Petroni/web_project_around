@@ -61,7 +61,7 @@
 
 .profile__edit-button:hover {
     cursor: pointer;
-    opacity: 70%;
+    opacity: 60%;
 }
 
 .profile__edit-image {
@@ -80,7 +80,7 @@
 }
 
 .profile__add-button:hover {
-    opacity: 70%;
+    opacity: 60%;
     cursor: pointer;  
 }
 
@@ -89,3 +89,68 @@
     width: 22px;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 21px 17px;
+    width: 880px;
+    margin: 0;
+    margin-top: 50px;
+    
+    }
+
+.gallery__card {
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    height: 361px;
+    
+}
+
+.card__image {
+    width: 282px;
+    height: 282px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__wrapper-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15px 0 21px;
+    height: 79px;
+    background-color: white;
+    color: black;
+    border-radius: 0 0 10px 10px;
+}
+
+.card__name {
+    width: 246px;
+    right: 21px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+    background-color: white;
+    color: rgba(0, 0, 0, 1);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card__like-button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1);
+}
+
+.card__like-button:hover {
+    opacity: 60%;
+}
+
+.card__like-button:active .heart-icon {
+       color: black;
+
+} 
