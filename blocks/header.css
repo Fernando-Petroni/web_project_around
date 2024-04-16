@@ -1,17 +1,26 @@
 .header {
   display: flex;  
   max-width: 880px;
-  max-height: 74px;
+  height: 74px;
+  padding-bottom: 20px;
   border-bottom: 1px solid rgba(84, 84, 84, 0.7);
-  margin: 0 200px;
   color:  rgba(255, 255, 255, 1);
+  margin: 0 auto;
   }
     
 .header__title {
   top: 45px;
   }
 
-.header_sub {
+.header_subtitle {
   font-weight: lighter;
   margin: 0;
+  }
+
+  @media screen and (max-width: 880px) {
+    .header {
+      width: 120px;
+      margin-left: 50px;
+    }
+  
   }
