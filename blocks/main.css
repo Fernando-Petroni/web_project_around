@@ -150,7 +150,7 @@
     opacity: 60%;
 }
 
-.card__like-button:active .heart-icon {
+.heart-icon:checked {
        color: black;
 
 } 
