@@ -11,8 +11,8 @@ closeButton.addEventListener('click', toggleForm);
 
 let form = document.querySelector('.popup__form');
 
-let inputName = document.querySelector('.popup__input_type_name');
-let inputOccupation = document.querySelector('.popup__input_type_role');
+let inputName = document.querySelector('.popup__input-name');
+let inputOccupation = document.querySelector('.popup__input-role');
 
 let profileName = document.querySelector('.profile__name');
 let profileOccupation = document.querySelector('.profile__occupation');
