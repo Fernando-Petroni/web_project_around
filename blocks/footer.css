@@ -2,8 +2,8 @@
     display: flex;
     justify-content: flex-start;
     width: 880px;
-    margin: 67px auto;
-    padding-bottom: 60px;
+    margin: 67px 200px 0;
+
   }
 
   .footer__copyright {
@@ -19,5 +19,15 @@
         display: flex;
         justify-content: flex-start;
         margin: 0 260px;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .footer {
+        display: flex;
+        justify-content: center;
+        margin-left: 60px;
+
+
     }
   }

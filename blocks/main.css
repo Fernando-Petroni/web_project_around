@@ -138,7 +138,7 @@
     overflow: hidden;
 }
 
-.card__like-button {
+.card__button {
         border: none;
         cursor: pointer;
         background-color: transparent;
@@ -151,11 +151,11 @@
 
 }
 
-.card__like-button:hover {
+.card__button:hover {
     opacity: 60%;
 }
 
-.card__like-button:focus {
+.card__button:focus {
 background-image:url(../images/black_heart.svg)
 
 
