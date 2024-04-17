@@ -1,8 +1,6 @@
 .footer {
-    display: flex;
-    justify-content: flex-start;
-    width: 880px;
-    margin: 67px 200px 0;
+  max-width: 880px;
+  margin: 67px auto 36px auto;
 
   }
 
@@ -26,7 +24,8 @@
     .footer {
         display: flex;
         justify-content: center;
-        margin-left: 60px;
+        margin-left: 160px;
+        bottom: 36px;
 
 
     }

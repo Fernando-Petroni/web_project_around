@@ -28,11 +28,9 @@
 
   @media screen and (max-width: 540px) {
     .header {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      margin-left: 50px;
+      width: 320px;
+      height: 56px;
+      top: 28px
     }
 
   }
