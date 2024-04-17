@@ -1,5 +1,5 @@
 .main {
-    padding-top: 40px;
+    padding-top: 20px;
     margin: 0 auto;
     }
 
@@ -24,12 +24,11 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 415px;
-    
-}
+    }
 
 .profile__info-content {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .profile__name {
@@ -53,7 +52,7 @@
 
 .profile__edit-button {
     background-color: black;
-    border: 1px solid white; 
+    border: 1px solid white;
     width: 24px;
     height: 24px;
     margin-left: 18px;
@@ -69,7 +68,7 @@
     width: 10px;
     color: black;
     background-color: black;
-    
+
 }
 
 .profile__add-button {
@@ -81,7 +80,7 @@
 
 .profile__add-button:hover {
     opacity: 60%;
-    cursor: pointer;  
+    cursor: pointer;
 }
 
 .profile__add-image {
@@ -97,7 +96,7 @@
     width: 880px;
     margin: 0 auto;
     margin-top: 50px;
-    
+
     }
 
 .gallery__card {
@@ -105,7 +104,7 @@
     flex-direction: column;
     width: 282px;
     height: 361px;
-    
+
 }
 
 .card__image {
@@ -140,72 +139,98 @@
 }
 
 .card__like-button {
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: rgba(0, 0, 0, 1);
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        background-image: url(../images/Vector_heart_like.svg);
+        width: 21px;
+        height: 19px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: auto;
+
 }
 
 .card__like-button:hover {
     opacity: 60%;
 }
 
-.heart-icon:checked {
-       color: black;
+.card__like-button:focus {
+background-image:url(../images/black_heart.svg)
 
-} 
+
+}
 
 @media screen and (max-width: 880px) {
+
+
     .profile {
-        display: flex;     
+       display: flex;
        justify-content: space-around;
-       margin: 0 30px;        
+       width: 100%;
+       margin: 0 auto;
     }
-              
+
     .profile__edit-image {
         width: 100%;
-        color: black;       
+        color: black;
+
     }
-    
+
+    .profile__name {
+        margin-left: 10px;
+    }
+
+    .profile__occupation {
+       margin-left: 10px;
+    }
+
     .profile__add-button {
         background-color: black;
         border: 1px solid white;
         width: 150px;
         }
-    
+
     .profile__add-image {
         height: 22px;
         width: 22px;
+        margin-top: 10px;
+
     }
-    
+
     .gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 591px;
         margin: 40px auto;
         gap: 10px;
-        
-        
+
+
         }
-    
+
     .gallery__card {
         display: flex;
         flex-direction: column;
         width: 282px;
         height: 361px;
-        
-    } 
+
+    }
 
 }
 
 @media screen and (max-width: 540px) {
+    .main {
+        width: 100%;
+    }
+
     .profile {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         width: 282px;
         height: 282px;
         margin: 0 auto;
+
     }
 
     .profile__info {
@@ -214,8 +239,8 @@
         align-items: center;
         width: 282px;
         height: 282px;
-        margin-bottom: 36px; 
-       
+        margin-bottom: 36px;
+
     }
 
     .profile__name {
@@ -228,9 +253,9 @@
         margin: 30px 10px 14px 46px;
         line-height: 26px;
         color: rgba(255, 255, 255, 1);
-        margin: 0;
+        margin-top: 20px;
     }
-    
+
     .profile__occupation {
         display: flex;
         justify-content: center;
@@ -246,12 +271,25 @@
         background-color: black;
         border: 1px solid white;
         width: 100%;
-        padding-bottom: 36px; 
+        padding-bottom: 36px;
         }
 
     .gallery {
-      
+
       grid-template-columns: repeat(1, 1fr);
       width: 282px;
     }
+
+    .card__wrapper-card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 15px 0 21px;
+        height: 79px;
+        background-color: white;
+        color: black;
+        border-radius: 0 0 10px 10px;
+    }
+
+
   }
