@@ -1,6 +1,6 @@
-let openFormButton = document.querySelector('.profile__edit-button');
-let popup = document.querySelector('.popup');
-let closeButton = popup.querySelector('.popup__close-button');
+const openFormButton = document.querySelector('.profile__edit-button');
+const popup = document.querySelector('.popup');
+const closeButton = popup.querySelector('.popup__close-button');
 
 function toggleForm() {
   popup.classList.toggle('popup_visible');
@@ -9,13 +9,13 @@ function toggleForm() {
 openFormButton.addEventListener('click', toggleForm);
 closeButton.addEventListener('click', toggleForm);
 
-let form = document.querySelector('.popup__form');
+const form = document.querySelector('.popup__form');
 
-let inputName = document.querySelector('.popup__input-name');
-let inputOccupation = document.querySelector('.popup__input-role');
+const inputName = document.querySelector('.popup__input-name');
+const inputOccupation = document.querySelector('.popup__input-role');
 
-let profileName = document.querySelector('.profile__name');
-let profileOccupation = document.querySelector('.profile__occupation');
+const profileName = document.querySelector('.profile__name');
+const profileOccupation = document.querySelector('.profile__occupation');
 
 
 function handleFormSubmit(evt) {

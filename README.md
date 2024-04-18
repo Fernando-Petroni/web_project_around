@@ -12,3 +12,5 @@ Tecnologias Utilizadas: HTML, CSS, JavaScript.
 
 Referências:
 Sprit 5 TripleTen
+
+Link de acesso ao projeto: https://github.com/Fernando-Petroni/web_project_around
