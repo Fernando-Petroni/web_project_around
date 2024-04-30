@@ -100,13 +100,28 @@
     width: 880px;
     margin: 0 auto;
     margin-top: 50px;
-
     }
 
 .gallery__card {
     display: flex;
     flex-direction: column;
     width: 282px;
+    }
+
+    .gallery__card-delete {
+      position: absolute;
+      margin-top: 35px;
+      margin-right: 15px;
+      margin-left: 249px;
+      margin-bottom: 245px;
+      width: 18px;
+      height: 19px;
+    }
+
+    .gallery__card-delete:hover {
+      transition: 0.2s;
+      cursor: pointer;
+      opacity: 60%;
     }
 
 .gallery__card-image {
@@ -218,7 +233,9 @@ background-image:url(../images/black_heart.svg);
 
     }
 
-}
+
+  }
+
 
 @media screen and (max-width: 540px) {
     .main {
