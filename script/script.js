@@ -18,8 +18,10 @@ const inputName = document.querySelector('.popup__input-name');
 const inputOccupation = document.querySelector('.popup__input-role');
 const profileName = document.querySelector('.profile__name');
 const profileOccupation = document.querySelector('.profile__occupation');
-const licheirra = document.querySelector('.gallery__card-delete')
-const imageBox = document.querySelector('.imagebox');
+const lixeira = document.querySelector('.gallery__card-delete')
+const modalImage = document.querySelector('.imagebox');
+const closeImageBtn = document.querySelector('.imagebox__close-btn')
+
 
 const initialCards = [
     {
@@ -57,6 +59,14 @@ initialCards.forEach((card)=>{
     container.append(cardItem)
 })
 
+// função para abrir e e fechar os popups
+function openPopup(popupForm) {
+  popupForm.classList.add('popup_visible');
+}
+function closePopup(popupForm) {
+  popupForm.classList.remove('popup_visible');
+}
+
 function createCard(card) {
     const template = document.querySelector('#template')
     const cardItem = template.content.querySelector('.gallery__card').cloneNode(true)
@@ -77,21 +87,22 @@ function createCard(card) {
     imageBox.setAttribute('src' , card.link)
     imageBox.setAttribute('alt' , card.name)
     imageBoxTitle.textContent = card.name
-
-    openPopup(imageBox)
-
+    openPopup(modalImage)
+    // const closeImageBtn = document.querySelector('.imagebox__close-btn')
+    // closeImageBtn.addEventListener('click', () => closePopup(popup));
   });
+
     return cardItem
 }
 
 
-// função para abrir e e fechar os popups
-function openPopup(popupForm) {
-    popupForm.classList.add('popup_visible');
-}
-function closePopup(popupForm) {
-    popupForm.classList.remove('popup_visible');
-}
+
+
+// fechar imagem cliclada
+closeImageBtn.addEventListener('click', () => {
+  closePopup(modalImage);
+});
+
 
 // Reset dos formularios
 function reset() {
@@ -113,6 +124,7 @@ openAddButton.addEventListener('click', () => {
     openPopup(popupAddForm)
 });
 closeAddFormButton.addEventListener('click', () => closePopup(popupAddForm));
+
 
 
 // Add Submição do formulario de Editar Perfil
@@ -141,11 +153,6 @@ submitBtnAdd.addEventListener('click', handleCardFormSubmit);
 
 
 
-// Adicionando o popup da imagem
-const images = document.querySelectorAll('.gallery__card-image');
 
-images.forEach((image) => {
-
-})
 
 
