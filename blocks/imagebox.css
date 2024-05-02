@@ -27,6 +27,10 @@
   border: none;
 }
 
+.imagebox__close-btn:hover {
+  opacity: 60%;
+}
+
 .imagebox__content {
   max-width: 75vw;
   max-height: 75vh;
