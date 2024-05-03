@@ -88,8 +88,7 @@ function createCard(card) {
     imageBox.setAttribute('alt' , card.name)
     imageBoxTitle.textContent = card.name
     openPopup(modalImage)
-    // const closeImageBtn = document.querySelector('.imagebox__close-btn')
-    // closeImageBtn.addEventListener('click', () => closePopup(popup));
+
   });
 
     return cardItem
