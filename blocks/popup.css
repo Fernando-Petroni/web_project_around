@@ -10,7 +10,7 @@
   .popup_visible {
     display: flex;
     justify-content: center;
-    align-items: center;
+
   }
 
   .popup__container {
@@ -27,6 +27,7 @@
     max-width: 430px;
     max-height: 330px;
     box-sizing: border-box;
+    top: 100px;
   }
 
   .popup__close-button {

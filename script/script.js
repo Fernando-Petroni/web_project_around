@@ -134,7 +134,7 @@ function handlesubmit(e) {
     closePopup(popup)
 }
 
-submitBtnEdit.addEventListener('click', handlesubmit)
+formeditPopup.addEventListener('submit', handlesubmit)
 
 // Add Submição do formulario de Adicionar Card
 function handleCardFormSubmit(e) {
@@ -148,7 +148,7 @@ function handleCardFormSubmit(e) {
     // likeImage()
     closePopup(popupAddForm)
 }
-submitBtnAdd.addEventListener('click', handleCardFormSubmit);
+formCard.addEventListener('submit', handleCardFormSubmit);
 
 
 

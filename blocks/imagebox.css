@@ -10,9 +10,9 @@
 
 .imagebox__container {
   position: relative;
-
   max-width: 816px;
   max-height: 540px;
+  top:41px;
  }
 
 
@@ -34,6 +34,7 @@
 .imagebox__content {
   max-width: 75vw;
   max-height: 75vh;
+
 }
 
 .imagebox__image {
