@@ -1,92 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="viagem, meio ambiente, selvagem, USA">
-    <meta name="author" content="Fernando Carvalho Petroni">
-    <meta name="description" content="Around USA">
-    <link rel="stylesheet" href="pages/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="viagem, meio ambiente, selvagem, USA" />
+    <meta name="author" content="Fernando Carvalho Petroni" />
+    <meta name="description" content="Around USA" />
+    <link rel="stylesheet" href="pages/index.css" />
     <title>Web Project Around</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="page">
-    <header class="header">
-     <img class="header__logo" src="./images/logo.png" alt="Logo Around USA">
-    </header>
- <main class="main">
-    <section class="profile">
-        <img class="profile__image-perfil" src=".//images/jac.png" alt="autor na cabine de um 737 da boing em Brasília">
-      <div class="profile__info">
-        <div class="profile__info-content">
-            <h2 class="profile__name">Jacques Cousteau</h2>
-            <button type="button" class="profile__edit-button">
-                <img class="profile__edit-image" src="./images/edit_button.png" alt="imagem do botão para edição">
+      <header class="header">
+        <img
+          class="header__logo"
+          src="./images/logo.png"
+          alt="Logo Around USA"
+        />
+      </header>
+      <main class="main">
+        <section class="profile">
+          <img
+            class="profile__image-perfil"
+            src=".//images/jac.png"
+            alt="Foto do Explorador Jacques Cousteau"
+          />
+          <div class="profile__info">
+            <div class="profile__info-content">
+              <h2 class="profile__name">Jacques Cousteau</h2>
+              <button type="button" class="profile__edit-button">
+                <img
+                  class="profile__edit-image"
+                  src="./images/edit_button.png"
+                  alt="imagem do botão para edição"
+                />
+              </button>
+            </div>
+            <h3 class="profile__occupation">Explorador</h3>
+          </div>
+          <button type="button" class="button profile__add-button">
+            <img
+              class="profile__add-image"
+              src="./images/Vector_add.svg"
+              alt="imagem do ícone de adicionar"
+            />
+          </button>
+        </section>
+        <ul class="gallery"></ul>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&copy;2024 Around The World.</p>
+      </footer>
+      <div class="popup">
+        <div class="popup__container">
+          <button type="button" class="popup__close-button">
+            <img
+              src="./images/Close_Icon.svg"
+              alt="botão para fechar o popup"
+            />
+          </button>
+          <h2 class="popup__title">Editar Perfil</h2>
+          <form
+            id="profileForm"
+            name="profileForm"
+            class="popup__form"
+            novalidade
+          >
+            <input
+              minlength="2"
+              maxlength="40"
+              type="text"
+              id="inputName"
+              class="popup__input-name popup__input"
+              placeholder="Nome"
+              value="Jacques Cousteau"
+              name="input-name"
+              required
+            />
+            <span
+              name="profile-span"
+              class="popup__form-error"
+              id="input-name-error"
+            ></span>
+            <input
+              minlength="2"
+              maxlength="200"
+              type="text"
+              id="inputRole"
+              class="popup__input-role popup__input"
+              placeholder="Sobre Mim"
+              value="Explorador"
+              name="input-role"
+              required
+            />
+            <span
+              name="role-span"
+              class="popup__form-error"
+              id="input-role-error"
+            ></span>
+            <button
+              type="submit"
+              class="popup__submit-button"
+              id="save-button"
+              disabled
+            >
+              Salvar
             </button>
+          </form>
         </div>
-        <h3 class="profile__occupation">Explorador</h3>
       </div>
-        <button type="button" class="button profile__add-button">
-        <img class="profile__add-image" src="./images/Vector_add.svg" alt="imagem do ícone de adicionar">
-         </button>
-
-    </section>
-    <ul class="gallery">
-    </ul>
- </main>
- <footer class="footer">
-    <p class="footer__copyright">&copy;2024 Around The World.</p>
- </footer>
- <div class="popup">
-  <div class="popup__container">
-    <button type="button" class="popup__close-button">
-      <img src="./images/Close_Icon.svg" alt="botão para fechar o popup">
-    </button>
-    <h2 class="popup__title">Editar Perfil</h2>
-    <form class="popup__form">
-      <input minlength="2" maxlength="20" type="text" id="input-name" class="popup__input-name" placeholder="Nome" value="Fernando Petroni" required>
-      <input minlength="2" maxlength="20" type="text" id="input-role" class="popup__input-role"  placeholder="Sobre Mim" value="Jornalista e Geógrafo" required>
-        <button type="submit" class="popup__submit-button" id="save-button">Salvar</button>
-    </form>
-  </div>
-  </div>
-  <div class="popup popup-add-card">
-    <div class="popup__container">
-      <button type="button" class="popup__close-button popup__close-add-button">
-        <img src="./images/Close_Icon.svg" alt="botão para fechar o popup">
-      </button>
-      <h2 class="popup__title">Novo Local</h2>
-      <form class="popup__form popup-add-card-form">
-        <input
-       minlength="2" maxlength="20" type="text" class="popup__input-name popup__input-title" id="popup__input-title"  placeholder="Título" value="Título" required>
-        <input minlength="2" class="popup__input-role popup__input-link" id="popup__input-link"   placeholder="Link da Imagem" value="ink da Imagem" type="url" required>
-        <button type="submit" class="popup__submit-button popup__Card-submit-button" id="saveButton">Criar</button>
-      </form>
+      <div class="popup popup-add-card">
+        <div class="popup__container">
+          <button
+            type="button"
+            class="popup__close-button popup__close-add-button"
+          >
+            <img
+              src="./images/Close_Icon.svg"
+              alt="botão para fechar o popup"
+            />
+          </button>
+          <h2 class="popup__title">Novo Local</h2>
+          <form
+            id="cardForm"
+            name="cardForm"
+            class="popup__form popup-add-card-form"
+            novalidate
+          >
+            <input
+              minlength="2"
+              maxlength="30"
+              type="text"
+              class="popup__input-card popup__input"
+              id="popup__input-title"
+              placeholder="Título"
+              value="Título"
+              name="input-location-name"
+              required
+            />
+            <span
+              name="title-span"
+              class="popup__form-error"
+              id="input-location-name-error"
+            ></span>
+            <input
+              minlength="2"
+              class="popup__input-card popup__input"
+              id="popup__input-link"
+              placeholder="Link da Imagem"
+              value="Link da Imagem"
+              type="url"
+              name="input-link-image"
+              required
+            />
+            <span
+              name="url-span"
+              class="popup__form-error popup-add-card-error"
+              id="input-link-image-error"
+            ></span>
+            <button
+              type="submit"
+              class="popup__submit-button popup__Card-submit-button"
+              id="saveButton"
+              disabled
+            >
+              Criar
+            </button>
+          </form>
+        </div>
+      </div>
+      <template class="gallery__template" id="template">
+        <li class="gallery__card">
+          <img
+            class="gallery__card-delete"
+            type="reset"
+            id="reset"
+            src="./images/Trash.png"
+            alt="botão para excluir"
+          />
+          <img
+            class="gallery__card-image"
+            src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_vanoise.jpg"
+            alt="Imagem de Vanoise"
+          />
+          <div class="gallery__card-wrapper">
+            <p class="gallery__card-name"></p>
+            <button class="gallery__card-button"></button>
+          </div>
+        </li>
+      </template>
+      <div class="imagebox">
+        <div class="imagebox__popup imagebox__container">
+          <button type="button" class="imagebox__close-btn">
+            <img
+              src="./images/Close_Icon.svg"
+              alt="botão para fechar o popup"
+            />
+          </button>
+          <div class="imagebox__content">
+            <img
+              class="imagebox__image"
+              src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_vanoise.jpg"
+              alt="Imagem de Vanoise"
+            />
+            <p class="imagebox__caption"></p>
+          </div>
+        </div>
+      </div>
+      <script src="./script/script.js"></script>
+      <script src="./script/validation.js"></script>
     </div>
-    </div>
-    <template class="gallery__template" id="template">
-      <li class="gallery__card">
-        <img class="gallery__card-delete" type="reset" id="reset" src="./images/Trash.png" alt="botão para excluir">
-        <img class="gallery__card-image" src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_vanoise.jpg" alt="Imagem de Vanoise">
-        <div class="gallery__card-wrapper">
-          <p class="gallery__card-name"></p>
-          <button class="gallery__card-button"></button>
-  </div>
-      </li>
-</template>
-<div class="imagebox">
-  <div class="imagebox__popup imagebox__container">
-    <button type="button" class="imagebox__close-btn">
-      <img src="./images/Close_Icon.svg" alt="botão para fechar o popup">
-    </button>
-    <div class=" imagebox__content">
-    <img class="imagebox__image" src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_vanoise.jpg" alt="Imagem de Vanoise">
-    <p class="imagebox__caption"></p>
-
-  </div>
-</div>
-</div>
-<script src="./script/script.js"></script>
-</div>
-</body>
+  </body>
 </html>
