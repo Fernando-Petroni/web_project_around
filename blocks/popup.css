@@ -108,13 +108,6 @@
 }
 
 @media screen and (max-width: 1080px) {
-  .popup__container {
-    display: flex;
-    justify-content: center;
-    width: 433px;
-    height: 540px;
-  }
-
   .popup_visible {
     position: absolute;
     margin-top: 90px;
@@ -122,30 +115,8 @@
 }
 
 @media screen and (max-width: 720px) {
-  .popup__container {
-    display: flex;
-    justify-content: center;
-    width: 433px;
-    height: 540px;
-  }
-
   .popup_visible {
     position: absolute;
-    margin: 90px 175px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .popup__container {
-    display: flex;
-    justify-content: center;
-    width: 433px;
-    height: 540px;
-  }
-
-  .popup_visible {
-    position: absolute;
-    margin-left: 150px;
-    margin-top: 20px;
+    margin: 0 auto;
   }
 }
