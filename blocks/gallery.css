@@ -6,29 +6,29 @@
   width: 880px;
   margin: 0 auto;
   margin-top: 50px;
-  }
+}
 
 .gallery__card {
   display: flex;
   flex-direction: column;
   width: 282px;
-  }
+}
 
-  .gallery__card-delete {
-    position: absolute;
-    margin-top: 35px;
-    margin-right: 15px;
-    margin-left: 249px;
-    margin-bottom: 245px;
-    width: 18px;
-    height: 19px;
-  }
+.gallery__card-delete {
+  position: absolute;
+  margin-top: 35px;
+  margin-right: 15px;
+  margin-left: 249px;
+  margin-bottom: 245px;
+  width: 18px;
+  height: 19px;
+}
 
-  .gallery__card-delete:hover {
-    transition: 0.2s;
-    cursor: pointer;
-    opacity: 60%;
-  }
+.gallery__card-delete:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  opacity: 60%;
+}
 
 .gallery__card-image {
   width: 282px;
@@ -62,16 +62,15 @@
 }
 
 .gallery__card-button {
-      border: none;
-      cursor: pointer;
-      background-color: transparent;
-      background-image: url(../images/Vector_heart_like.svg);
-      width: 21px;
-      height: 19px;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin-left: auto;
-
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url(../images/Vector_heart_like.svg);
+  width: 21px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
 }
 
 .gallery__card-button:hover {
@@ -79,49 +78,37 @@
 }
 
 .gallery__card-button_liked {
-background-image:url(../images/black_heart.svg);
-
+  background-image: url(../images/black_heart.svg);
 }
 
 @media screen and (max-width: 880px) {
-
   .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 591px;
     margin: 40px auto;
     gap: 10px;
+  }
 
-
-    }
-
-.gallery__card-image {
+  .gallery__card-image {
     display: flex;
     flex-direction: column;
     width: 282px;
     height: 361px;
-
-}
-
+  }
 }
 
 @media screen and (max-width: 540px) {
   .gallery {
-
     grid-template-columns: repeat(1, 1fr);
     width: 282px;
   }
 
   .gallery__card-wrapper {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 0 15px 0 21px;
-      height: 79px;
-      background-color: white;
-      color: black;
-      border-radius: 0 0 10px 10px;
+    padding: 0 15px 0 21px;
+    height: 79px;
+    background-color: white;
+    color: black;
+    border-radius: 0 0 10px 10px;
   }
-
-
 }

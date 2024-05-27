@@ -108,8 +108,6 @@ input:valid {
 
 @media screen and (max-width: 880px) {
   .profile {
-    display: flex;
-    justify-content: space-around;
     width: 100%;
     margin: 0 auto;
   }
@@ -140,16 +138,12 @@ input:valid {
   }
 
   .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     width: 591px;
     margin: 40px auto;
     gap: 10px;
   }
 
   .gallery__card-image {
-    display: flex;
-    flex-direction: column;
     width: 282px;
     height: 361px;
   }
@@ -163,24 +157,20 @@ input:valid {
   .profile {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     width: 282px;
-    height: 282px;
+    height: 286px;
     margin: 0 auto;
+    margin-right: 440px;
   }
 
   .profile__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 282px;
-    height: 282px;
+    height: 286px;
     margin-bottom: 36px;
   }
 
   .profile__name {
-    display: flex;
-    justify-content: center;
     width: 196px;
     height: 22px;
     font-weight: 500;
@@ -210,14 +200,10 @@ input:valid {
   }
 
   .gallery {
-    grid-template-columns: repeat(1, 1fr);
     width: 282px;
   }
 
   .gallery__card-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 0 15px 0 21px;
     height: 79px;
     background-color: white;
